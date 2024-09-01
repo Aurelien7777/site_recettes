@@ -1,0 +1,201 @@
+body {
+    background-color: #8ba1bb;
+    font-family: "Helvetica", Impact,"Arial Narrow Bold", "sans-serif";
+    margin: 0;
+}
+
+/* font-family permet de définir le type d'écriture*/
+
+p.categorie {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-top: -15px;
+    padding: 10px 18px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* font-size définit la taille de l'écriture*/
+
+/* Display : block est toujours par défaut et affiche sur tout l'espace de la fenêtre  
+Display : inline, inline-block, blok  */
+
+div.categorie {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    overflow: visible;
+}
+
+
+/* margin permet de définir les tailles des marges / Sans indication supplémentaire = haut, droite, bas, gauche
+Pour que les marges s'adapte à la taille de fenêtre, il faut indiquer des % au lieu de "px" */
+
+
+div.contenu {
+    background-color: white;
+    margin: 60px 10% 80px 10%;
+    padding: 0px 30px 30px 30px;
+    min-width: 350px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+    
+}
+
+/* padding permet de définir la taille du block
+width permet de définir la largeur maximale*/
+/* box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2) pour le contour en mode ombre */
+
+.centre {
+    text-align: center;
+    width: 100%;
+}
+
+/*Pour aligner le texte CSS dans la classe : text-align : center; */
+
+h1 {
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 15px;
+}
+
+div.separateur {
+                width: 120px;
+                height: 2px;
+                background-color: black;
+                margin-left: auto;
+                margin-right: auto;
+                }
+
+/* width définit la largeur */
+/*  margin-left: auto; margin-right: auto = centrer le trait hr */
+
+p.description {
+    text-align: center;
+    max-width: 400px;
+    display: inline-block;
+}
+
+div.description {
+    
+    text-align: center;
+}
+
+div.info {
+        position:relative
+        }
+
+table.info {
+    position: absolute;
+    bottom:0px; 
+    width:100%; 
+    color: white;
+    background-color:#6C829DC0; 
+    height: 80px;
+    }
+
+/* Position détermine comment est un élément est positionné dans le document.   */
+
+table.info td{
+    font-size: 14px;
+    text-align: center;
+    vertical-align: top;
+}
+
+table.info th{
+    font-size: 16px;
+    vertical-align: bottom;
+    padding-bottom: 7px;
+    }
+
+
+/* Définition de l'image */
+
+img.info {
+        display: block;
+        max-height: 400px;
+        object-fit: cover;
+        min-height: 200px;
+        background-color: lightgray;
+        }
+
+div.colonne {
+            width: 45% ;
+            margin: top 20px; ;
+
+            }
+
+
+div.colonne h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 5px solid #6C829DC0;
+    padding-bottom: 5px ;
+    
+
+        }
+
+div.colonne1 {
+            display: inline-block;
+            margin-right: 10%;
+            }
+
+            
+div.colonne2 {
+    float: right ;
+            }
+
+
+div.instruction p {
+                border: 1px solid lightgray;
+                padding: 10px;
+                text-align: center;
+                font-size: 14px;
+                margin-top: 1px;
+                margin-bottom: 4px;
+
+                }
+
+
+/* création des colonnes */
+/* Création du cercle autour des chiffres de la préparation */
+
+table.preparation p.numero {
+                        background-color: #6C829DC0;
+                        color: white;
+                        width: 25px;
+                        height: 25px;
+                        text-align: center;
+                        font-size: 14px;
+                        font-weight: bold;
+                        padding-top: 4px;
+                        box-sizing: border-box;
+                        border-radius: 50%;
+                        margin: 0;
+                        
+
+                        }
+
+table.preparation {
+                    vertical-align: top;
+                }
+
+
+
+
+table.preparation td.preparation_etape {
+                                        font-size: 14px;
+                                        padding-left: 10px;
+                                        padding-bottom: 10px;
+                                        }
+
+table.preparation tr {
+                    height: 40px;
+                    }
+
+* {
+    overflow: auto;
+}
+
